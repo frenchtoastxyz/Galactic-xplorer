@@ -1,4 +1,4 @@
-import { localStorageGet } from './utils.js';
+import { localStorageGet } from './Utils.js';
 
 // Update the storage display with current resource quantities
 const updateStorageDisplay = () => {
@@ -14,6 +14,6 @@ $(document).ready(function () {
 
     // Optionally, add a return to main page button listener
     $('#mainPageButton').on('click', function () {
-        window.location.href = 'index.html';
+        window.location.href = 'Index.html';
     });
 });
