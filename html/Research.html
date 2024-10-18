@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Page</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <h1>Research and Technology Upgrades</h1>
+
+    <div class="button-group">
+        <button id="mainPageButton">Return to Main Page</button>
+    </div>
+
+    <div class="research-section">
+        <h2>Available Research</h2>
+
+        <div class="research-item">
+            <label for="researchBoost1">Resource Boost I</label>
+            <div class="resource-costs">Cost: 100 BQB, 50 Resource 1, 20 Resource 2, 10 Resource 3</div>
+            <button id="researchBoost1" data-bqb-cost="100" data-resource1-cost="50" data-resource2-cost="20" data-resource3-cost="10" data-unlocked="false">Research</button>
+        </div>
+
+        <div class="research-item">
+            <label for="storageUpgrade1">Storage Upgrade I</label>
+            <div class="resource-costs">Cost: 150 BQB, 100 Resource 1, 50 Resource 2, 25 Resource 3</div>
+            <button id="storageUpgrade1" data-bqb-cost="150" data-resource1-cost="100" data-resource2-cost="50" data-resource3-cost="25" data-unlocked="false">Research</button>
+        </div>
+
+        <div class="research-item">
+            <label for="researchBoost2">Resource Boost II</label>
+            <div class="resource-costs">Cost: 200 BQB, 150 Resource 1, 100 Resource 2, 50 Resource 3</div>
+            <button id="researchBoost2" data-bqb-cost="200" data-resource1-cost="150" data-resource2-cost="100" data-resource3-cost="50" data-unlocked="false" class="disabled" disabled>
+                Research (Requires Resource Boost I)
+            </button>
+        </div>
+
+        <div class="research-item">
+            <label for="storageUpgrade2">Storage Upgrade II</label>
+            <div class="resource-costs">Cost: 300 BQB, 200 Resource 1, 150 Resource 2, 100 Resource 3</div>
+            <button id="storageUpgrade2" data-bqb-cost="300" data-resource1-cost="200" data-resource2-cost="150" data-resource3-cost="100" data-unlocked="false" class="disabled" disabled>
+                Research (Requires Storage Upgrade I)
+            </button>
+        </div>
+
+        <div class="research-item">
+            <label for="automation1">Automation I</label>
+            <div class="resource-costs">Cost: 500 BQB, 500 Resource 1, 300 Resource 2, 150 Resource 3</div>
+            <button id="automation1" data-bqb-cost="500" data-resource1-cost="500" data-resource2-cost="300" data-resource3-cost="150" data-unlocked="false">
+                Research
+            </button>
+        </div>
+
+        <div class="research-item">
+            <label for="resourceBoost3">Resource Boost III</label>
+            <div class="resource-costs">Cost: 500 BQB, 400 Resource 1, 200 Resource 2, 100 Resource 3</div>
+            <button id="resourceBoost3" data-bqb-cost="500" data-resource1-cost="400" data-resource2-cost="200" data-resource3-cost="100" data-unlocked="false" class="disabled" disabled>
+                Research (Requires Resource Boost II)
+            </button>
+        </div>
+
+        <div class="research-item">
+            <label for="storageUpgrade3">Storage Upgrade III</label>
+            <div class="resource-costs">Cost: 600 BQB, 500 Resource 1, 250 Resource 2, 150 Resource 3</div>
+            <button id="storageUpgrade3" data-bqb-cost="600" data-resource1-cost="500" data-resource2-cost="250" data-resource3-cost="150" data-unlocked="false" class="disabled" disabled>
+                Research (Requires Storage Upgrade II)
+            </button>
+        </div>
+
+        <div class="research-item">
+            <label for="automation2">Automation II</label>
+            <div class="resource-costs">Cost: 1000 BQB, 600 Resource 1, 400 Resource 2, 200 Resource 3</div>
+            <button id="automation2" data-bqb-cost="1000" data-resource1-cost="600" data-resource2-cost="400" data-resource3-cost="200" data-unlocked="false" class="disabled" disabled>
+                Research (Requires Resource Boost III & Storage Upgrade III)
+            </button>
+        </div>
+
+        <div class="research-item">
+            <label for="enhancedEfficiency">Enhanced Efficiency</label>
+            <div class="resource-costs">Cost: 1200 BQB, 800 Resource 1, 500 Resource 2, 300 Resource 3</div>
+            <button id="enhancedEfficiency" data-bqb-cost="1200" data-resource1-cost="800" data-resource2-cost="500" data-resource3-cost="300" data-unlocked="false" class="disabled" disabled>
+                Research (Requires Automation II)
+            </button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/research.js"></script>
+</body>
+</html>
