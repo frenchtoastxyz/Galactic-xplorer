@@ -1,0 +1,160 @@
+/* Global Styles */
+body {
+    font-family: "Verdana", sans-serif;
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 24px;
+    color: #f0f0f0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #444;
+    color: #e0e0e0;
+    border: 1px solid #777;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+button.disabled {
+    background-color: #777;
+    cursor: not-allowed;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px 0;
+    border-collapse: collapse;
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #555;
+    text-align: center;
+    font-size: 14px;
+}
+
+th {
+    background-color: #444;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+td {
+    white-space: nowrap;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table, th, td {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .button-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 100%;
+        max-width: 300px;
+        padding: 8px 0;
+        margin: 5px 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    table {
+        font-size: 16px;
+    }
+
+    th, td {
+        padding: 12px;
+    }
+}
+
+/* Specific Styles for Total Value Display */
+#totalValueContainer {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Research Page Styles */
+.research-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.research-item {
+    margin: 15px 0;
+}
+
+.resource-costs {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* Market Page Styles */
+#marketTable {
+    margin: 30px 0;
+}
+
+#marketTable th, #marketTable td {
+    text-align: center;
+    padding: 12px;
+}
+
+/* Storage Page Styles */
+.storage-container {
+    margin: 30px 0;
+    text-align: center;
+}
