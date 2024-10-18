@@ -1,4 +1,4 @@
-import { localStorageGet, localStorageSet } from './utils.js';
+import { localStorageGet, localStorageSet } from './Utils.js';
 
 // Cached DOM element for spendable BQB
 const $spendableBQB = $('#spendableBQB');
@@ -87,6 +87,6 @@ $(document).ready(function () {
     });
 
     $('#mainPageButton').on('click', function () {
-        window.location.href = 'index.html';
+        window.location.href = 'Index.html';
     });
 });
