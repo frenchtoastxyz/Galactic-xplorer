@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Page</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <h1>Market</h1>
+
+    <div class="button-group">
+        <button id="mainPageButton">Return to Main Page</button>
+    </div>
+
+    <p>Spendable BQB: <span id="spendableBQB">0</span> BQB</p>
+
+    <table id="marketTable">
+        <thead>
+            <tr>
+                <th>Resource</th>
+                <th>Quantity</th>
+                <th>Buy Price</th>
+                <th>Sell Price</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Resource 1</td>
+                <td><span id="quantity1">0</span></td>
+                <td>10 BQB</td>
+                <td>5 BQB</td>
+                <td>
+                    <button class="buyButton" data-resource="1">Buy</button>
+                    <button class="sellButton" data-resource="1">Sell</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Resource 2</td>
+                <td><span id="quantity2">0</span></td>
+                <td>20 BQB</td>
+                <td>10 BQB</td>
+                <td>
+                    <button class="buyButton" data-resource="2">Buy</button>
+                    <button class="sellButton" data-resource="2">Sell</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Resource 3</td>
+                <td><span id="quantity3">0</span></td>
+                <td>50 BQB</td>
+                <td>25 BQB</td>
+                <td>
+                    <button class="buyButton" data-resource="3">Buy</button>
+                    <button class="sellButton" data-resource="3">Sell</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Resource 4</td>
+                <td><span id="quantity4">0</span></td>
+                <td>100 BQB</td>
+                <td>50 BQB</td>
+                <td>
+                    <button class="buyButton" data-resource="4">Buy</button>
+                    <button class="sellButton" data-resource="4">Sell</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Resource 5</td>
+                <td><span id="quantity5">0</span></td>
+                <td>200 BQB</td>
+                <td>100 BQB</td>
+                <td>
+                    <button class="buyButton" data-resource="5">Buy</button>
+                    <button class="sellButton" data-resource="5">Sell</button>
+                </td>
+            </tr>
+            <!-- Continue for more resources (up to 15, if necessary) -->
+        </tbody>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/market.js"></script>
+</body>
+</html>
