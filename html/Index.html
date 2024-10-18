@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <h1>Main Page</h1>
+
+    <div class="button-group">
+        <button id="addRowButton">Add Row</button>
+        <button id="upgradeButton">Upgrade Rows</button> <!-- Upgrade Button -->
+        <button id="deleteButton">Delete</button>
+        <button id="researchButton">Research</button>
+        <button id="marketButton">Market</button>
+        <button id="storageButton">Storage</button>
+    </div>
+
+    <div id="totalValueContainer">
+        <p>Total BQB Value: <span id="totalBQBValue">0</span> BQB</p>
+        <p>Spendable BQB: <span id="spendableBQB">0</span> BQB</p>
+    </div>
+
+    <table id="planetTable">
+        <thead>
+            <tr>
+                <th>Select</th>
+                <th>Class</th>
+                <th>Planet</th>
+                <th>Planet Type</th>
+                <th>Moons</th>
+                <th>Moon Type</th>
+                <th>Asteroids</th>
+                <th>Asteroid Type</th>
+                <th>Total</th>
+                <th>Resource One</th>
+                <th>Resource Two</th>
+                <th>Resource Three</th>
+                <th>BQB Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be dynamically inserted here -->
+        </tbody>
+    </table>
+
+    <!-- Template for reusable rows -->
+    <template id="table-row-template">
+        <tr>
+            <td><input type="checkbox" class="row-select"></td>
+            <td class="data-class"></td>
+            <td class="planet-data"></td>
+            <td class="planet-type"></td>
+            <td class="moon-data"></td>
+            <td class="moon-type"></td>
+            <td class="asteroid-data"></td>
+            <td class="asteroid-type"></td>
+            <td class="total-data"></td>
+            <td class="resource-one"></td>
+            <td class="resource-two"></td>
+            <td class="resource-three"></td>
+            <td class="bqb-value"></td>
+        </tr>
+    </template>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
