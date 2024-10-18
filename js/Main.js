@@ -1,4 +1,4 @@
-import { localStorageGet, localStorageSet, getRandomNumber, shouldAddAdditionalRow } from './utils.js';
+import { localStorageGet, localStorageSet, getRandomNumber, shouldAddAdditionalRow } from './Utils.js';
 
 // Cache DOM elements for efficiency
 const $tableBody = $('#planetTable tbody');
@@ -169,13 +169,13 @@ $(document).on('click', '#upgradeButton', function () {
 
 // Navigation buttons
 $(document).on('click', '#researchButton', function () {
-    window.location.href = 'research.html';
+    window.location.href = 'Research.html';
 });
 
 $(document).on('click', '#marketButton', function () {
-    window.location.href = 'market.html';
+    window.location.href = 'Market.html';
 });
 
 $(document).on('click', '#storageButton', function () {
-    window.location.href = 'storage.html';
+    window.location.href = 'Storage.html';
 });
