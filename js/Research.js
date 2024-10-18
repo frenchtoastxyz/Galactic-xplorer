@@ -1,4 +1,4 @@
-import { localStorageGet, localStorageSet } from './utils.js';
+import { localStorageGet, localStorageSet } from './Utils.js';
 
 // Update the research buttons and prerequisites
 const updateResearchButtons = () => {
@@ -116,6 +116,6 @@ $(document).ready(function () {
     });
 
     $('#mainPageButton').on('click', function () {
-        window.location.href = 'index.html';
+        window.location.href = 'Index.html';
     });
 });
