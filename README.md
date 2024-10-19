@@ -1,5 +1,5 @@
 # Galactic-xplorer
 
 ---
-permalink: /index.html
+permalink: ../index.html
 ---
